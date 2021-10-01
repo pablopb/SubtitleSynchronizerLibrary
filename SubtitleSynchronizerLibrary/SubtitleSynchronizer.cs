@@ -12,7 +12,7 @@ namespace SubtitleSynchronizerLibrary
         {
             if (!File.Exists(filePath))
             {
-                return FileReadOperationResult.FromFailure("Arquivo inesxistente.");
+                return FileReadOperationResult.FromFailure("Arquivo inexistente.");
             }
 
             if (!Path.GetExtension(filePath).ToUpper().Equals(".SRT"))
